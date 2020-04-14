@@ -10,7 +10,8 @@ NAME	=	110borwein
 SRC	=	src/main.c 		\
 		src/display_help.c	\
 		src/error_handling.c	\
-		src/my_strcmp.c
+		src/my_strcmp.c		\
+		src/start.c
 
 CC	?=	gcc
 
@@ -27,7 +28,7 @@ OBJ	=	$(SRC:.c=.o)
 name	:	all
 
 all	:	$(OBJ)
-		$(CC) -o $(NAME) $(OBJ)
+		$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
 tests_run	:
 		$(CC) -o unit_tests src/*.c $(CFFLAGS)

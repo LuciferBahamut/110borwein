@@ -15,6 +15,7 @@ int error_handling(char *str);
 int write_error(char const *str);
 int display_help(void);
 int my_strcmp(char const *str1, char const *str2);
+void start(double n);
 
 static const int ERROR = 84;
 static const int SUCCESS = 0;

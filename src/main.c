@@ -5,6 +5,7 @@
 ** main
 */
 
+#include <stdlib.h>
 #include "borwein.h"
 #include "error_msg.h"
 
@@ -16,5 +17,6 @@ int main(int ac, char **av)
         return (display_help());
     if (error_handling(av[1]))
         return (ERROR);
+    start(atof(av[1]));
     return (SUCCESS);
 }
