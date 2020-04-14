@@ -24,8 +24,10 @@ CFFLAGS	=	tests/unit_tests.c -I./include --coverage -lcriterion
 
 OBJ	=	$(SRC:.c=.o)
 
+name	:	all
+
 all	:	$(OBJ)
-		$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(CPPFLAGS) $(LDFLAGS)
+		$(CC) -o $(NAME) $(OBJ)
 
 tests_run	:
 		$(CC) -o unit_tests src/*.c $(CFFLAGS)
@@ -46,4 +48,4 @@ fclean	:	clean
 
 re	:	fclean all
 
-.PHONY	:	all debug tests_run clean fclean re
+.PHONY	:	name all debug tests_run clean fclean re
