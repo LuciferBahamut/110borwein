@@ -5,17 +5,8 @@
 ** error handling
 */
 
-#include <string.h>
-#include <unistd.h>
 #include "borwein.h"
 #include "error_msg.h"
-
-int write_error(char const *str)
-{
-    write(2, str, strlen(str));
-    write(2, STR_HELP, strlen(STR_HELP));
-    return (TRUE);
-}
 
 int error_handling(char *str)
 {

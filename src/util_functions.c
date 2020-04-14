@@ -1,11 +1,14 @@
 /*
-** EPITECH PROJECT, 2019
-** pool
+** EPITECH PROJECT, 2020
+** 110borwein
 ** File description:
-** my_strcmp
+** util functions
 */
 
 #include <string.h>
+#include <unistd.h>
+#include "error_msg.h"
+#include "borwein.h"
 
 int my_strcmp(char const *str1, char const *str2)
 {
@@ -16,4 +19,11 @@ int my_strcmp(char const *str1, char const *str2)
             return (0);
     }
     return (1);
+}
+
+int write_error(char const *str)
+{
+    write(2, str, strlen(str));
+    write(2, STR_HELP, strlen(STR_HELP));
+    return (TRUE);
 }

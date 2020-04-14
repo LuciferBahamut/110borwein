@@ -8,10 +8,9 @@
 NAME	=	110borwein
 
 SRC	=	src/main.c 		\
-		src/display_help.c	\
 		src/error_handling.c	\
-		src/my_strcmp.c		\
-		src/start.c
+		src/util_functions.c	\
+		src/compute.c
 
 CC	?=	gcc
 
