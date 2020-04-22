@@ -25,5 +25,5 @@ int write_error(char const *str)
 {
     write(2, str, strlen(str));
     write(2, STR_HELP, strlen(STR_HELP));
-    return (ERROR);
+    return (TRUE);
 }

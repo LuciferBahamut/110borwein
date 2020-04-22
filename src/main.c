@@ -5,29 +5,11 @@
 ** main
 */
 
-#include <math.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include "borwein.h"
-#include "error_msg.h"
-
-int display_help(void)
-{
-    printf("USAGE\n    ./110borwein n\n\n");
-    printf("DESCRIPTION\n    n\tconstant defining the integral ");
-    printf("to be computed\n");
-    return (SUCCESS);
-}
 
 int main(int ac, char **av)
 {
-    if (ac != 2)
-        return (write_error(STR_ERROR_ARG));
-    if (my_strcmp(av[1], "-h"))
-        return (display_help());
-    if (error_handling(av[1]))
+    if (start(ac, av))
         return (ERROR);
-    start(atof(av[1]));
     return (SUCCESS);
 }

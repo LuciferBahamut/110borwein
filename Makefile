@@ -13,6 +13,11 @@ SRC	=	src/main.c 		\
 		src/util_functions.c	\
 		src/compute.c
 
+TEST	=	src/start.c		\
+		src/error_handling.c	\
+		src/util_functions.c	\
+		src/compute.c
+
 CC	?=	gcc
 
 CFLAGS	=	-W -Wextra -Wall
@@ -31,7 +36,7 @@ all	:	$(OBJ)
 		$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
 tests_run	:
-		$(CC) -o unit_tests src/*.c $(CFFLAGS)
+		$(CC) -o unit_tests $(TEST) $(CFFLAGS) $(LDFLAGS)
 
 clean	:
 		rm -f $(OBJ)

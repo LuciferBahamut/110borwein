@@ -11,7 +11,7 @@
 ////////////////////
 //    COMPUTING   //
 ////////////////////
-void start(double n);
+int start(int ac, char **av);
 
 void midpoint(double n, double pi);
 void trapezoidal(double n, double pi);
