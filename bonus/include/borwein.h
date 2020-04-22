@@ -14,6 +14,7 @@
 void midpoint(double n, double pi);
 void trapezoidal(double n, double pi);
 void simpson(double n, double pi);
+void boole_rule(double n, double pi);
 
 ////////////////////
 // ERROR HANDLING //

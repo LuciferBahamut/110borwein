@@ -27,6 +27,7 @@ static void start(double n)
     midpoint(n, pi);
     trapezoidal(n, pi);
     simpson(n, pi);
+    boole_rule(n, pi);
 }
 
 int main(int ac, char **av)

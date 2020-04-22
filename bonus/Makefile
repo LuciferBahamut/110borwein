@@ -10,7 +10,8 @@ NAME	=	110borwein
 SRC	=	src/main.c 		\
 		src/error_handling.c	\
 		src/util_functions.c	\
-		src/compute.c
+		src/compute.c		\
+		src/boole_rule.c
 
 CC	?=	gcc
 

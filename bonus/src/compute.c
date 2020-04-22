@@ -84,5 +84,5 @@ void simpson(double n, double pi)
     }
     pi = diff_pi(pi, res);
     printf("Simpson:\nI%.0f = %.10f\n", n, res);
-    printf("diff = %.10f\n", pi);
+    printf("diff = %.10f\n\n", pi);
 }
