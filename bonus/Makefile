@@ -8,12 +8,22 @@
 NAME	=	110borwein
 
 SRC	=	src/main.c 		\
+		src/start.c		\
 		src/error_handling.c	\
 		src/util_functions.c	\
 		src/compute.c		\
 		src/borwein.c		\
 		src/boole_rule.c	\
 		src/simpson_bis.c
+
+TEST	=	src/start.c		\
+		src/error_handling.c	\
+		src/util_functions.c	\
+		src/compute.c		\
+		src/borwein.c		\
+		src/boole_rule.c	\
+		src/simpson_bis.c
+
 
 CC	?=	gcc
 
@@ -33,7 +43,7 @@ all	:	$(OBJ)
 		$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
 
 tests_run	:
-		$(CC) -o unit_tests src/*.c $(CFFLAGS)
+		$(CC) -o unit_tests $(TEST) $(CFFLAGS) $(LDFLAGS)
 
 clean	:
 		rm -f $(OBJ)
@@ -48,6 +58,7 @@ fclean	:	clean
 		rm -f include/*~ 	\
 		rm -f *.gcda 		\
 		rm -f *.gcno		\
+		rm unit_tests
 
 re	:	fclean all
 

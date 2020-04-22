@@ -11,6 +11,8 @@
 ////////////////////
 //    COMPUTING   //
 ////////////////////
+int start(int ac, char **av);
+
 double diff_pi(double pi, double res);
 double borwein(double n, double x);
 void midpoint(double n, double pi);
