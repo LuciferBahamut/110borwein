@@ -23,3 +23,4 @@ Test(errors_few_args, exit_code, .init=redirect_all_stdout)
     start(ac, av);
     cr_assert_stderr_eq_str("This program must take one arg (see with -h)\n", "");
 }
+
