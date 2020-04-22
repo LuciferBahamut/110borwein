@@ -8,6 +8,7 @@
 NAME	=	110borwein
 
 SRC	=	src/main.c 		\
+		src/start.c		\
 		src/error_handling.c	\
 		src/util_functions.c	\
 		src/compute.c

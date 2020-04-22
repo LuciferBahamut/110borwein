@@ -20,15 +20,6 @@ int display_help(void)
     return (SUCCESS);
 }
 
-static void start(double n)
-{
-    double pi = M_PI / 2;
-
-    midpoint(n, pi);
-    trapezoidal(n, pi);
-    simpson(n, pi);
-}
-
 int main(int ac, char **av)
 {
     if (ac != 2)

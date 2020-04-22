@@ -11,6 +11,8 @@
 ////////////////////
 //    COMPUTING   //
 ////////////////////
+void start(double n);
+
 void midpoint(double n, double pi);
 void trapezoidal(double n, double pi);
 void simpson(double n, double pi);
