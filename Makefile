@@ -51,6 +51,7 @@ fclean	:	clean
 		rm -f include/*~ 	\
 		rm -f *.gcda 		\
 		rm -f *.gcno		\
+		rm -f unit_tests
 
 re	:	fclean all
 
