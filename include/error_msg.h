@@ -10,7 +10,6 @@
 
 static const char STR_HELP[] = " (see with -h)\n";
 static const char STR_ERROR_ARG[] = "This program must take one arg";
-static const char STR_ERROR_NBR[] = "This argument must be a number";
-static const char STR_ERROR_VALNBR[] = "This argument must be a valid number";
+static const char STR_ERROR_NBR[] = "This argument must be a integer";
 
 #endif /* _ERROR_MSG_H_ */
