@@ -11,7 +11,9 @@ SRC	=	src/main.c 		\
 		src/error_handling.c	\
 		src/util_functions.c	\
 		src/compute.c		\
-		src/boole_rule.c
+		src/borwein.c		\
+		src/boole_rule.c	\
+		src/simpson_bis.c
 
 CC	?=	gcc
 

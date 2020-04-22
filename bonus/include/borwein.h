@@ -11,10 +11,13 @@
 ////////////////////
 //    COMPUTING   //
 ////////////////////
+double diff_pi(double pi, double res);
+double borwein(double n, double x);
 void midpoint(double n, double pi);
 void trapezoidal(double n, double pi);
 void simpson(double n, double pi);
 void boole_rule(double n, double pi);
+void simpson_bis(double n, double pi);
 
 ////////////////////
 // ERROR HANDLING //
